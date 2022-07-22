@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: registry_service
+
+server:
+  port: 7072
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enableSelfPreservation: false
