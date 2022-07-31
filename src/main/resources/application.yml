@@ -1,6 +1,6 @@
 spring:
   application:
-    name: registry_service
+    name: eureka-discovery-service
 
 server:
   port: 7072
@@ -9,5 +9,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-  server:
-    enableSelfPreservation: false
+    service-url:
+      defaultZone: http://localhost:7072/eureka
+  renewalPercentThreshold: 0.85
